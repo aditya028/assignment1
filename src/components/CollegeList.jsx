@@ -15,10 +15,10 @@ function CollegeList({ currentState }) {
       <h1>
         Showing {college.length} colleges from {currentState}
       </h1>
-      {college.map((item) => (
+      {college.map((item , id) => (
         <button
           onClick={() => (window.location.href = `${item.web_pages[0]}`)}
-          key={item.name}
+          key={id}
           type="button"
           className="list-group-item list-group-item-action "
         >
